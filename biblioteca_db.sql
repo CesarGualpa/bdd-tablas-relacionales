@@ -1,0 +1,3 @@
+-- TALLER: TABLAS RELACIONALES Y TABLA DE ROMPIMIENTO
+-- PostgreSQL
+-- Base de datos: biblioteca_db
