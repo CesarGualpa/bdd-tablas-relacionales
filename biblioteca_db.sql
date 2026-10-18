@@ -160,3 +160,30 @@ GROUP BY
     a.nombre
 ORDER BY
     cantidad_libros DESC;
+
+- MODIFICACION DE LA TABLA
+ALTER TABLE libros
+ADD COLUMN precio DOUBLE PRECISION;
+
+-- Actualizar precios
+UPDATE libros
+SET precio = 35.50
+WHERE codigo = 'L0001';
+
+UPDATE libros
+SET precio = 29.99
+WHERE codigo = 'L0002';
+
+UPDATE libros
+SET precio = 45.00
+WHERE codigo = 'L0003';
+
+UPDATE libros
+SET precio = 32.75
+WHERE codigo = 'L0004';
+
+-- Mostrar titulo y precio
+SELECT
+    titulo,
+    precio
+FROM libros;
