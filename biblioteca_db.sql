@@ -1,3 +1,20 @@
 -- TALLER: TABLAS RELACIONALES Y TABLA DE ROMPIMIENTO
 -- PostgreSQL
 -- Base de datos: biblioteca_db
+
+- CREAR BASE DE DATOS
+CREATE DATABASE biblioteca_db;
+
+- CREAR TABLAS PRINCIPALES
+CREATE TABLE libros (
+    codigo VARCHAR(5) PRIMARY KEY,
+    titulo VARCHAR(50) NOT NULL,
+    paginas INT NOT NULL
+);
+
+CREATE TABLE autores (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    pais VARCHAR(30) NOT NULL
+);
+
